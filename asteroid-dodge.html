@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Asteroid Dodge</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link href="/styles/style.css" rel="stylesheet" type="text/css" />
+    <link href="/styles/content.css" rel="stylesheet" type="text/css" />
+    <link href="/styles/asteroid-dodge.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="major-body">
+
+    <div class="nav-bar">
+        <div>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a id="current" href="games.html">Games</a>
+            <a href="quiz.html">Quiz</a>
+            <a href="extra.html">Extra</a>
+            <a id="right-link" href="games.html">Back</a>
+            <a id="right-link" href="#footer-icon">v</a>
+        </div>
+    </div>
+
+    <div class="text-body">
+        <h2>Asteroid Dodge</h2>
+        <button class="square-btn" onclick="restartGame()"><img src="images/rocket/Replay.png"></button>
+        <button class="square-btn" onclick="updateStatus()"><img id="status-img"
+                src="images/rocket/play-button.png"></button>
+        <button class="square-btn" onclick="playMusic()"><img id="audio-img" src="images/rocket/audio-on.png"></button>
+        <button id="mode-btn" onclick="selectMode()"><img id="mode-img" src="images/rocket/50stars-mode.png"></button>
+        <audio id="countdown-sound" src="sounds/launch-countdown1.wav"></audio>
+        <audio id="music" loop="true" src="sounds/peritune-spook4.mp3"></audio>
+        <audio id="collision-sound" src="sounds/minecrafttnt.mp3"></audio>
+        <audio id="lose-sound" src="sounds/losesound.mp3"></audio>
+        <audio id="win-sound" src="sounds/victorysound.mp3"></audio>
+        <br>
+
+        <!-- Canvas -->
+        <canvas id="game-canvas" onclick="startgame()"></canvas>
+
+        <!-- Canvas Images -->
+        <img class="hide-img" id="sky-bground" src="images/rocket/sky-bground.png">
+        <img class="hide-img" id="rocket-ship" src="images/rocket/rocket.png">
+        <img class="hide-img" id="meteoride-img" src="images/rocket/meteoroid.png">
+        <img class="hide-img" id="star-img" src="images/rocket/star.png">
+        <img class="hide-img" id="rainbow-star" src="images/rocket/rainbow-star.png">
+        <img class="hide-img" id="full-heart1" src="images/rocket/full-container1.png">
+        <img class="hide-img" id="full-heart2" src="images/rocket/full-container2.png">
+        <img class="hide-img" id="full-heart3" src="images/rocket/full-container3.png">
+        <img class="hide-img" id="empty-heart" src="images/rocket/empty-container.png">
+        <img class="hide-img" id="game-over" src="images/rocket/game-over.png">
+        <img class="hide-img" id="game-win" src="images/rocket/game-win.png">
+        <img class="hide-img" id="win-amongus" src="images/rocket/win-amongus.png">
+        <img class="hide-img" id="lose-amongus" src="images/rocket/lose-amongus.png">
+        <img class="hide-img" id="pause-screen" src="images/rocket/pause-screen.png">
+    </div>
+
+    <footer class="ftr-content">
+        <a href="index.html"><img id="footer-icon" src="images/earth-icon.png" alt="Earth Icon" /></a>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><img id="rocket-icon"
+                src="images/rocket-icon.png" alt="link"></a>
+        <p>@ 2022 Space, Inc. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Load Javascript-->
+    <script src="/scripts/asteroid-dodge.js"></script>
+</body>
+
+</html>

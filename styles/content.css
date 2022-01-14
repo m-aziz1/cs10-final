@@ -1,0 +1,88 @@
+/* PAGE SPECFIC CONTENT */
+
+/* About Page */
+.about-text {
+  display: inline-block;
+  align-content: center;
+  width: 80%;
+}
+
+.model-img {
+  height: 250px;
+  border: 1px solid midnightblue;
+  cursor: pointer;
+}
+
+.img-checkbox {
+  display: none;
+}
+
+#geocentric-btn:checked + label img {
+  transform: scale(2);
+}
+
+#bigbang-btn:checked + label img {
+  transform: scale(1.8);
+}
+
+.small-print {
+  font-size: 12px;
+}
+
+/* Quiz Page */
+#quiz-img {
+  height: 200px;
+  margin-bottom: 5px;
+}
+
+#answer-key {
+  background-color: burlywood;
+  border: 1px solid midnightblue;
+  display: none;
+  width: 300px;
+  height: 185px;
+}
+
+.correct {
+  border: 1px solid green;
+}
+
+.incorrect {
+  border: 1px solid red;
+}
+
+ol {
+  position: relative;
+  left: 20px;
+}
+
+li span {
+  position: relative;
+  left: -20px;
+}
+
+/* Games Page */
+#gameone-img {
+  width: 512px;
+  border: 2px solid midnightblue;
+}
+
+/* Buttons */
+.interact-btn,
+#faster-btn,
+#slower-btn {
+  padding: 3px 5px;
+  background-color: burlywood;
+  color: midnightblue;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+#submit-btn,
+#fill-btn {
+  padding: 3px 8px;
+  background-color: midnightblue;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}

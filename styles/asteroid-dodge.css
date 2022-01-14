@@ -1,0 +1,27 @@
+/* ASTEROID DODGE */
+canvas {
+  margin-top: 10px;
+  border: 1px solid gray;
+  background: url("/images/rocket/game-start.gif");
+}
+
+button {
+  padding: 5px;
+  background-color: wheat;
+  color: wheat;
+  cursor: pointer;
+}
+
+.hide-img {
+  display: none;
+}
+
+.square-btn img {
+  height: 22px;
+  width: 22px;
+}
+
+#mode-btn img {
+  height: 22px;
+  width: 100px;
+}

@@ -1,0 +1,65 @@
+/* Home button */
+.home-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.home-btn img {
+  width: 300px;
+  border-radius: 50%;
+}
+
+/* About button */
+.about-btn {
+  position: absolute;
+  left: 10%;
+  top: 90%;
+  transform: translate(-10%, -90%);
+}
+
+.about-btn img {
+  width: 225px;
+  border-radius: 40%;
+}
+
+/* Games button */
+.games-btn {
+  position: absolute;
+  left: 10%;
+  top: 15%;
+  transform: translate(-10%, -15%);
+}
+
+.games-btn img {
+  width: 200px;
+  border-radius: 20%;
+  transform: rotate(330deg);
+}
+
+/* Quiz button */
+.quiz-btn {
+  position: absolute;
+  left: 90%;
+  top: 15%;
+  transform: translate(-90%, -15%);
+}
+
+.quiz-btn img {
+  width: 250px;
+  border-radius: 50%;
+}
+
+/* Extra button */
+.extra-btn {
+  position: absolute;
+  left: 90%;
+  top: 90%;
+  transform: translate(-90%, -90%);
+}
+
+.extra-btn img {
+  width: 250px;
+  border-radius: 30%;
+}

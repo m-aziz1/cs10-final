@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Quiz</title>
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+  <link href="/styles/style.css" rel="stylesheet" type="text/css" />
+  <link href="/styles/content.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="major-body">
+  <div class="header">
+    <h1>SPACE</h1>
+  </div>
+
+  <div class="nav-bar">
+    <div>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="games.html">Games</a>
+      <a id="current" href="quiz.html">Quiz</a>
+      <a href="extra.html">Extra</a>
+      <a id="right-link" href="#footer-icon">v</a>
+    </div>
+  </div>
+
+  <div class="text-body">
+    <img id="quiz-img" src="images/quiz-banner.jpg" alt="Quiz Banner" />
+    <hr />
+
+    <h2>Question 1</h2>
+    <p>The ______ named Jupiter, Mars, Mercury, Saturn, and Venus.</p>
+    <p>
+      Answer: <input id="qtn-1" type="text" /><span id="q1-span"></span>
+    </p>
+    <hr />
+
+    <h2>Question 2</h2>
+    <p>Ganymede is a moon of which planet?</p>
+    <p>
+      Answer: <input id="qtn-2" type="text" /><span id="q2-span"></span>
+    </p>
+    <hr />
+
+    <h2>Question 3</h2>
+    <p>Black holes are areas in space with intense _______.</p>
+    <p>
+      Answer: <input id="qtn-3" type="text" /><span id="q3-span"></span>
+    </p>
+    <hr />
+
+    <h2>Question 4</h2>
+    <p>The Universe is static. <button class="interact-btn" onclick="qFourTrue()">true</button> <button
+        class="interact-btn" onclick="qFourFalse()">false</button>
+    </p>
+    <p>
+      Answer: <input id="qtn-4" type="text" /><span id="q4-span"></span>
+    </p>
+    <hr />
+
+    <h2>Question 5</h2>
+    <p>Whats the root word for Earth? (Old English or German)</p>
+    <p>
+      Answer: <input id="qtn-5" type="text" /><span id="q5-span"></span>
+    </p>
+    <hr />
+
+    <h2>Question 6</h2>
+    <p>The Big Bang was the start of the universe. <button class="interact-btn" onclick="qSixTrue()">true</button>
+      <button class="interact-btn" onclick="qSixFalse()">false</button>
+    </p>
+    <p>
+      Answer: <input id="qtn-6" type="text" /><span id="q6-span"></span>
+    </p>
+    <hr />
+
+    <button id="submit-btn">SUBMIT</button>
+    <br><br>
+    <span id="score">---</span>
+    <br><br>
+    <button class="interact-btn" onclick="showAnswers()">Answer Key</button>
+    <br><br>
+    <div id="answer-key">
+      <ol>
+        <li><span>Romans/Roman Empire</span></li>
+        <li><span>Jupiter</span></li>
+        <li><span>Gravity</span></li>
+        <li><span>False</span></li>
+        <li><span>Eorthe/Erde</span></li>
+        <li><span>True</span></li>
+      </ol>
+      <button id="fill-btn" onclick="fillanswers()">Fill</button>
+    </div>
+  </div>
+
+  <footer class="ftr-content">
+    <a href="index.html"><img id="footer-icon" src="images/earth-icon.png" alt="Earth Icon" /></a>
+    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><img id="rocket-icon"
+        src="images/rocket-icon.png" alt="link"></a>
+    <p>@ 2022 Space, Inc. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Load Javascript-->
+  <script src="/scripts/quiz.js"></script>
+</body>
+
+</html>

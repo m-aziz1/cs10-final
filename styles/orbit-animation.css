@@ -1,0 +1,112 @@
+/* ORBITAL ANIMATION */
+#circle-orbit-div {
+  background: url("/images/orbital-animation/animation-background.png");
+  border-radius: 25%;
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 35px;
+  position: relative;
+  top: 20px;
+  height: 425px;
+  width: 425px;
+}
+
+/* Sun */
+#sun-center {
+  position: relative;
+  top: 175px;
+  width: 80px;
+}
+
+/* Mercury */
+#mercury-orbit {
+  position: absolute;
+  top: 140px;
+  left: 140px;
+  width: 150px;
+  height: 150px;
+  border: 2px rgb(202, 202, 202) dashed;
+  border-radius: 50%;
+  animation: spin-right 8s linear infinite;
+}
+
+#mercury-orbit img {
+  position: absolute;
+  top: 40px;
+  left: -6px;
+  width: 20px;
+  animation: axis-rotate 6s infinite linear;
+}
+
+/* Venus */
+#venus-orbit {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  width: 225px;
+  height: 225px;
+  border: 2px rgb(255, 240, 33) dashed;
+  border-radius: 50%;
+  animation: spin-right 12s linear infinite;
+}
+
+#venus-orbit img {
+  position: absolute;
+  top: 20px;
+  left: 17px;
+  width: 25px;
+  animation: axis-rotate 8s infinite linear;
+}
+
+/* Earth */
+#earth-orbit {
+  position: absolute;
+  top: 61px;
+  left: 61px;
+  width: 300px;
+  height: 300px;
+  border: 2px rgb(115, 158, 214) dashed;
+  border-radius: 50%;
+  animation: spin-right 16s linear infinite;
+}
+
+#earth-orbit img {
+  position: absolute;
+  top: -17px;
+  left: 125px;
+  width: 30px;
+  animation: axis-rotate 4s infinite linear;
+}
+
+/* Mars */
+#mars-orbit {
+  position: absolute;
+  top: 23px;
+  left: 23px;
+  width: 375px;
+  height: 375px;
+  border: 2px rgb(253, 124, 64) dashed;
+  border-radius: 50%;
+  animation: spin-right 20s linear infinite;
+}
+
+#mars-orbit img {
+  position: absolute;
+  top: -15px;
+  left: 125px;
+  width: 35px;
+  animation: axis-rotate 5s infinite linear;
+}
+
+/* Animations */
+@keyframes axis-rotate {
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes spin-right {
+  100% {
+    transform: rotate(360deg);
+  }
+}
