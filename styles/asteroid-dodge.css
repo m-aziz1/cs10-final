@@ -2,7 +2,8 @@
 canvas {
   margin-top: 10px;
   border: 1px solid gray;
-  background: url("/images/rocket/game-start.gif");
+  background: url("../images/rocket/game-start.gif");
+  max-width: 1050px;
 }
 
 button {

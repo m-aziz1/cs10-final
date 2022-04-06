@@ -158,7 +158,7 @@ function assignScore() {
       "/6&nbsp" +
       ((score / 6) * 100).toFixed(1) +
       "%";
-    document.getElementById("quiz-img").src = "images/medal.jpg";
+    document.getElementById("quiz-img").src = "../images/medal.jpg";
   }
 }
 

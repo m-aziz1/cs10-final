@@ -275,9 +275,9 @@ function collisionDetection() {
 
 function collisionEffects() {
   if (collisions === 1) {
-    fullHeartOne.src = "images/rocket/empty-container.png";
+    fullHeartOne.src = "../images/rocket/empty-container.png";
   } else if (collisions === 2) {
-    fullHeartTwo.src = "images/rocket/empty-container.png";
+    fullHeartTwo.src = "../images/rocket/empty-container.png";
   } else if (collisions >= 3) {
     active = false;
     gameEnd = true;
@@ -316,8 +316,8 @@ document.addEventListener("mousemove", mousemoveHandler);
 function mousemoveHandler(event) {
   //Update Variables
   let cnvRect = cnv.getBoundingClientRect(); //size of canvas
-  rocketX = event.x - cnvRect.left - 35;
-  rocketY = event.y - cnvRect.top - 50;
+  rocketX = event.x - cnvRect.left;
+  rocketY = event.y - cnvRect.top;
 
   if (rocketX < 0) {
     rocketX = 0;
@@ -341,7 +341,7 @@ function updateStatus() {
     if (active === true) {
       active = false;
       musicOff();
-      statusImg.src = "images/rocket/pause-button.png";
+      statusImg.src = "../images/rocket/pause-button.png";
       ctx.drawImage(pauseImg, 425, 275, 200, 200);
     } else {
       if (gameEnd !== true) {
@@ -351,7 +351,7 @@ function updateStatus() {
           playMusic();
           musicOn = true;
         }
-        statusImg.src = "images/rocket/play-button.png";
+        statusImg.src = "../images/rocket/play-button.png";
       }
     }
   }
@@ -359,16 +359,16 @@ function updateStatus() {
 
 function selectMode() {
   finalScore === 50
-    ? (finalScore = Infinity, modeImg.src = "images/rocket/endless-mode.png")
-    : (finalScore = 50, modeImg.src = "images/rocket/50stars-mode.png");
+    ? (finalScore = Infinity, modeImg.src = "../images/rocket/endless-mode.png")
+    : (finalScore = 50, modeImg.src = "../images/rocket/50stars-mode.png");
     console.log(finalScore);
 }
 
 function playMusic() {
   let audio = document.getElementById("music");
   musicOn === false
-    ? (audio.play(), musicOn = true, audioImg.src = "images/rocket/audio-on.png")
-    : (audio.pause(), musicOn = false, audioImg.src = "images/rocket/audio-mute.png");
+    ? (audio.play(), musicOn = true, audioImg.src = "../images/rocket/audio-on.png")
+    : (audio.pause(), musicOn = false, audioImg.src = "../images/rocket/audio-mute.png");
 }
 
 function musicOff() {

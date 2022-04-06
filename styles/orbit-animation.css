@@ -1,6 +1,6 @@
 /* ORBITAL ANIMATION */
 #circle-orbit-div {
-  background: url("/images/orbital-animation/animation-background.png");
+  background: url("../images/orbital-animation/animation-background.png");
   border-radius: 25%;
   display: inline-block;
   text-align: center;

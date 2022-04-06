@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Games</title>
+  <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon" />
+  <link href="../styles/style.css" rel="stylesheet" type="text/css" />
+  <link href="../styles/content.css" rel="stylesheet" type="text/css" />
+  <link href="../styles/orbit-animation.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="major-body">
+  <div class="header">
+    <h1>SPACE</h1>
+  </div>
+
+  <div class="nav-bar">
+    <div>
+      <a href="../index.html">Home</a>
+      <a href="./about.html">About</a>
+      <a id="current" href="./games.html">Games</a>
+      <a href="./quiz.html">Quiz</a>
+      <a href="./extra.html">Extra</a>
+      <a id="right-link" href="#footer-icon">v</a>
+    </div>
+  </div>
+
+  <div class="text-body">
+    <h2>Games</h2>
+    <a href="./asteroid-dodge.html"><img id="gameone-img" src="../images/asteroid-dodge.png" alt="asteroid dodge"></a>
+    <br>
+
+    <!-- ORBITAL ANIMATION -->
+    <div class="one" id="circle-orbit-div">
+      <img id="sun-center" src="../images/orbital-animation/sun-center.png">
+      <!-- Mercury1 -->
+      <div id="mercury-orbit">
+        <img src="../images/orbital-animation/mercury-1.png">
+      </div>
+      <!-- Venus2 -->
+      <div id="venus-orbit">
+        <img src="../images/orbital-animation/venus-2.png">
+      </div>
+      <!-- Earth3 -->
+      <div id="earth-orbit">
+        <img src="../images/orbital-animation/earth-3.png">
+      </div>
+      <!-- Mars4 -->
+      <div id="mars-orbit">
+        <img src="../images/orbital-animation/mars-4.png">
+      </div>
+    </div>
+    <br>
+    <button id="faster-btn" onclick="speedUp()">SPEED +</button> <button id="slower-btn" onclick="speedDown()">SPEED
+      -</button>
+
+  </div>
+
+  <footer class="ftr-content">
+    <a href="../index.html"><img id="footer-icon" src="../images/earth-icon.png" alt="Earth Icon" /></a>
+    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><img id="rocket-icon"
+        src="../images/rocket-icon.png" alt="link"></a>
+    <p>@ 2022 Space, Inc. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Load Javascript -->
+  <script src="../scripts/orbit-animation.js"></script>
+</body>
+
+</html>

@@ -4,7 +4,7 @@
 }
 
 html {
-  background: url("/images/space-background.png") center no-repeat fixed;
+  background: url("../images/space-background.png") center no-repeat fixed;
   background-size: cover;
 }
 
@@ -34,7 +34,7 @@ html {
 
 /* Header */
 .header {
-  background-image: url("/images/site-bgrnd1.png");
+  background-image: url("../images/site-bgrnd1.png");
   padding: 40px;
   text-align: center;
 }
